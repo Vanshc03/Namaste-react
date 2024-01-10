@@ -1,0 +1,14 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "react by vansh",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "vansh chinta",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
