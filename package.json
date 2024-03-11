@@ -16,28 +16,15 @@
   },
   "repository": {
     "type": "git",
-<<<<<<< HEAD
     "url": "git+https://github.com/Vanshc03/foodordering-system.git"
-=======
-    "url": "git+https://github.com/Vanshc03/Namaste-react.git"
->>>>>>> ce00a334946ca982533a6e61dbb98745d218254c
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
-    "react-router-dom": "^6.22.3",
+    "react-router-dom": "^6.21.3",
     "reactdom": "^2.0.0"
   },
   "browserlist": [
     "last 2 versions"
   ]
-=======
-    "reactdom": "^2.0.0"
-  },
-  "browserlist":[
-    "last 2 versions"
-  ]
-  
->>>>>>> ce00a334946ca982533a6e61dbb98745d218254c
 }

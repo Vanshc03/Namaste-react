@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-
 .search:hover{
     cursor: pointer;
 }
@@ -500,8 +497,6 @@ h4 {
   }
 }
 
-=======
-
 
 .search:hover{
     cursor: pointer;
@@ -644,4 +639,4 @@ h4 {
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite linear;
 }
->>>>>>> ce00a334946ca982533a6e61dbb98745d218254c
+
