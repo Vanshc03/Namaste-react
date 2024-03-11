@@ -1,4 +1,157 @@
-#parent
-{
- color: pink;
+
+
+.search:hover{
+    cursor: pointer;
+}
+
+.search {
+  background-color: #ddd;
+  color: grey;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.search-filter {
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.search-filter:hover {
+  background-color: #2980b9;
+}
+
+
+.res-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+
+
+
+.res-card {
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.res-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.food {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Adjust the font sizes and colors as needed */
+h3 {
+  font-size: 1.0em;
+  margin-bottom: 4px;
+}
+
+h4 {
+  font-size: 0.8em;
+  margin: 3px 0;
+  color: #555;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.filter-on {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.filter-on:hover {
+  background-color: #2980b9;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */ 
+  border-radius: 40%;
+}
+
+.nav-items ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items li {
+  margin: 0 15px;
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-items li:hover {
+  color: red;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Shimmer card styles */
+.shimmer-card {
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  margin: 10px;
+  background: linear-gradient(90deg, #eee 25%, #ddd 50%, #eee 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
 }
