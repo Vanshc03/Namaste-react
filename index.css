@@ -40,15 +40,11 @@
   background-color: #2980b9;
 }
 
-
 .res-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 15px;
 }
-
-
-
 
 .res-card {
   border: 1px solid #ddd;
@@ -58,12 +54,40 @@
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Set a fixed height for each card */
 }
 
 .res-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+
+.res-card img {
+  padding: auto;
+  max-height: 100%;
+  width: 100%;
+  align-self: center;
+}
+
+.res-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.res-card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.res-card-description {
+  flex-grow: 1;
+  margin-bottom: 5px;
+}
+
+
 
 .food {
   max-width: 200px;
@@ -76,9 +100,12 @@
 h3 {
   font-size: 1.0em;
   margin-bottom: 4px;
+  color: black;
+  text-decoration: none;
 }
 
 h4 {
+  text-decoration: none;
   font-size: 0.8em;
   margin: 3px 0;
   color: #555;
@@ -131,6 +158,7 @@ h4 {
 .nav-items li {
   margin: 0 15px;
   font-size: 24px;
+  font-weight: bold;
   color: #555;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
@@ -138,6 +166,17 @@ h4 {
 
 .nav-items li:hover {
   color: red;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #555; /* Adjust the link color as needed */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.nav-items a:hover {
+  color: red; /* Change color on hover */
 }
 
 .shimmer-container {
@@ -155,3 +194,308 @@ h4 {
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite linear;
 }
+
+/* RestaurantMenu.css */
+
+.menu-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-header {
+  text-align: center;
+}
+
+.menu-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.menu-header p {
+  font-size: 16px;
+  color: #777;
+}
+
+.menu-list {
+  margin-top: 20px;
+}
+
+.menu-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.menu-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-list li:hover {
+  background-color: #e9e9e9;
+}
+
+.item-name {
+  flex-grow: 1;
+}
+
+.item-price {
+  font-weight: bold;
+  color: #e44d26;
+}
+
+.res-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.res-card {
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.res-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.res-card img {
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.res-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.res-card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.res-card-description {
+  flex-grow: 1;
+  margin-bottom: 5px;
+}
+
+.res-card a {
+  text-decoration: none;
+  color: #555; /* Adjust the link color as needed */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+/* Contact.css */
+
+/* Overall container styling */
+.contact-us {
+  margin: 1rem;
+  margin-top: 5rem; /* Adjusted margin-top for better alignment */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the formal introduction section */
+.Formal {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.Formal h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #333; /* Dark text color */
+}
+
+.Formal p {
+  color: #555; /* Slightly darker text color */
+}
+
+/* Styling for the contact form container */
+.Form {
+  color: #fff; /* White text color */
+  width: 80%;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(to right, grey , blue ); /* Gradient background with theme colors */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increased box shadow */
+}
+
+.Form h1 {
+  font-size: 2rem;
+  color: #fff; /* White text color */
+  margin-bottom: 1rem;
+}
+
+/* Styling for the contact form elements */
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ContactForm label {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #fff; /* White text color */
+}
+
+.ContactForm input,
+.ContactForm textarea {
+  color: #333; /* Dark text color */
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: #f5f5f5; /* Light gray background */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.ContactForm textarea {
+  height: 6rem;
+  resize: none;
+}
+
+/* Styling for the form submit button */
+.ContactForm button {
+  border-radius: 0.75rem;
+  color: #333; /* Dark text color */
+  background: #fff; /* White background */
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.ContactForm button:hover {
+  background: #e0e0e0; /* Light gray background on hover */
+}
+
+/* About.css */
+
+/* Overall container styling */
+.About {
+  display: flex;
+  justify-content: center;
+}
+
+/* Container for the main content */
+.about-container {
+  background: linear-gradient(to right, grey,blue); /* Gradient background with theme colors */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 2rem;
+  margin-top: 6rem; /* Adjusted margin-top for better alignment */
+  text-align: justify;
+}
+
+/* Styling for the project and author sections */
+.project-section,
+.author-section {
+  margin-bottom: 2rem;
+}
+
+/* Section heading styling */
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* White text color */
+  margin-bottom: 0.5rem;
+}
+
+/* Section content styling */
+.section-content {
+  color: #fff; /* White text color */
+  line-height: 1.5;
+}
+
+/* Styling for the key features and technologies lists */
+.note,
+.text-sm {
+  color: #fff; /* White text color */
+  margin-top: 1rem;
+}
+
+/* Styling for the notice section */
+.note strong {
+  font-weight: bold;
+}
+
+/* Styling for the technologies used list */
+.text-sm ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.text-sm li {
+  margin-bottom: 0.5rem;
+}
+
+/* Styling for the author info section */
+.author-info {
+  margin-top: 1rem;
+}
+
+/* Responsive styling for larger screens */
+@media (min-width: 768px) {
+  .about-container {
+    padding: 2rem;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .section-content {
+    font-size: 1.2rem;
+  }
+
+  .note,
+  .text-sm {
+    font-size: 1.1rem;
+  }
+
+  .author-info {
+    font-size: 1.1rem;
+  }
+}
+
